@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Registration Complete!</title>
+    <title>Submission History</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
@@ -13,9 +13,21 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container-fluid center-block" align="center">
-            <h1 align ="center">Current and Past Approved Applications</h1>
-            <h4 align ="center">Here is a list of all current and past Research Symposium poster applications that have been approved. Please choose a year in order to filter these results.</h4>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="Login.aspx">Logout</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="URPFacultyHomePage.aspx">Home</a></li>
+                    <li><a href="PendingApplications.aspx">View Pending Applications</a></li>
+                    <li><a href="SubmissionHistory.aspx">View Submission History</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron center-block" align="center">
+            <h2 align ="center">Current and Past Approved Applications</h2>
+            <h3 align ="center">Here is a list of all current and past Research Symposium poster applications that have been approved. Please choose a year in order to filter these results.</h3>
             <br />
             <br />
             <asp:DropDownList ID="ddlYearFilter" runat="server" CssClass="ddl" Height="25px" Width="150px">
@@ -33,8 +45,8 @@
             <br />
             <br />
             <div class="row center-block">
-                <div class="col-sm-12 center-block">
-                    <h3>***GRIDVIEW OF ALL CURRENT AND PAST APPROVED APPLICATIONS HERE***</h3>
+                <div class="col-sm-12">
+                    <h5>You currently have no submissions.</h5>
                     <br />
                     <br />
                     <asp:Button CssClass="btn btn-default btn-sm center-block" ID="btnHome" runat="server" Text="Home" Font-Names="Century Gothic" Font-Size="Small" OnClick="btnHome_Click"/>

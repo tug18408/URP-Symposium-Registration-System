@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Registration Complete!</title>
+    <title>Pending Applications</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
@@ -13,13 +13,25 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container-fluid center-block" align="center">
-            <h1 align ="center">Current Applications</h1>
-            <h4 align ="center">Here is a list of all current Research Symposium poster applications pending approval.</h4>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="Login.aspx">Logout</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="URPFacultyHomePage.aspx">Home</a></li>
+                    <li><a href="PendingApplications.aspx">View Pending Applications</a></li>
+                    <li><a href="SubmissionHistory.aspx">View Submission History</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron center-block" align="center">
+            <h2 align ="center">Current Applications</h2>
+            <h3 align ="center">Here is a list of all current Research Symposium poster applications pending approval.</h3>
             <br />
             <div class="row center-block">
-                <div class="col-sm-12 center-block">
-                    <h3>***GRIDVIEW OF SELECTABLE (by checkbox by row) CURRENT APPLICATIONS HERE***</h3>
+                <div class="col-sm-12">
+                    <h4>You have no pending applications.</h4>
                     <br />
                     <asp:Button CssClass="btn btn-default btn-sm center-block" ID="btnApprove" runat="server" Text="Approve Selected Applications" Font-Names="Century Gothic" Font-Size="Small" OnClick="btnApprove_Click"/>
                     <br />

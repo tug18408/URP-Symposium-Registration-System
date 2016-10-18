@@ -13,11 +13,23 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container-fluid center-block" align="center">
-            <h1 align ="center">Congratulations!</h1>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="Login.aspx">Logout</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="URPFacultyHomePage.aspx">Home</a></li>
+                    <li><a href="PendingApplications.aspx">View Pending Applications</a></li>
+                    <li><a href="SubmissionHistory.aspx">View Submission History</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron center-block" align="center">
+            <h2 align ="center">Congratulations!</h2>
             <br />
-            <h4 align ="center">You&#39;ve successfully approved the following applications for the Research Symposium:</h4>
-            <p align ="center">//***GRIDVIEW OF JUST APPROVED APPLICATIONS HERE***//</p>
+            <h3 align ="center">You&#39;ve successfully approved the following applications for the Research Symposium:</h3>
+            
             <br />
             <div class="row center-block">
                 <div class="col-sm-12 center-block">

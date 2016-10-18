@@ -13,8 +13,20 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container-fluid center-block" align="center">
-            <h1 align ="center">Your Profile</h1>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="Login.aspx">Logout</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="URPStudentHomePage.aspx">Home</a></li>
+                    <li><a href="StudentProfile.aspx">My Profile</a></li>
+                    <li><a href="StudentRegistration.aspx">Register for the Research Symposium</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron center-block" align="center">
+            <h2 align ="center">Your Profile</h2>
             <br />
             <h4 align ="center">Approval Status: (Pending/Approved/Denied)</h4>
             <br />
